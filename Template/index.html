@@ -2,24 +2,28 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, maximum-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
 
-	<title>Justin Fisher</title>
-	<link rel="icon" href="img/fish-favicon.png" type="image/png">
-	<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
+    <title>Justin Fisher</title>
+    <link rel="icon" href="img/fish-favicon.png" type="image/png">
+    <link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
 
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
 
-	<link href="Content/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="Content/style.css" rel="stylesheet" type="text/css">
-	<link href="Content/font-awesome.css" rel="stylesheet" type="text/css">
-	<link href="Content/responsive.css" rel="stylesheet" type="text/css">
-	<link href="Content/magnific-popup.css" rel="stylesheet" type="text/css">
-	<link href="Content/animate.css" rel="stylesheet" type="text/css">
+    <link href="Content/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="Content/style.css" rel="stylesheet" type="text/css">
+    <link href="Content/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="Content/responsive.css" rel="stylesheet" type="text/css">
+    <link href="Content/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link href="Content/animate.css" rel="stylesheet" type="text/css">
+    <link href="Scripts/SyntaxHighlighter/styles/shCore.css" rel="stylesheet" />
+    <link href="Scripts/SyntaxHighlighter/styles/shThemeDefault.css" rel="stylesheet" />
+
+
     <link href="Content/Custom.css" rel="stylesheet" />
-	
+
 
 </head>
 
@@ -119,8 +123,8 @@
 
         </div>
         <div class="portfolioContainer wow fadeInUp delay-04s">
-            <div class="noPortfolio-box">
-                <a data-toggle="modal" data-target="#mathModal"><img src="img/sized-math-modal-button.png" alt=""></a>
+            <div class="Portfolio-box isotope">
+                <a href="#" class="" data-toggle="modal" data-target="#mathModal"><img src="img/sized-math-modal-button.png" alt=""></a>
                 <h3>Math Exercise</h3>
             </div>
             <div class="Portfolio-box webdesign">
@@ -128,15 +132,15 @@
                 <h3>Factorial Exercise</h3>
             </div>
             <div class="Portfolio-box branding">
-                <a href="img/sized-fizzbuzz.png"><img src="img/sized-fizzbuzz.png" alt=""></a>
+                <a href="#"><img src="img/sized-fizzbuzz.png" alt=""></a>
                 <h3>FizzBuzz Exercise</h3>
             </div>
             <div class=" Portfolio-box photography">
                 <a href="img/sized-pallindrome.png"><img src="img/sized-pallindrome.png" alt=""></a>
                 <h3>Pallindrome Exercise</h3>
             </div>
-            <div class="noPortfolio-box">
-                <a data-toggle="modal" data-target="#gridModal"><img src="img/sized-grid.jpg" alt=""></a>
+            <div class="Portfolio-box">
+                <a href="#" data-toggle="modal" data-target="#gridModal"><img src="img/sized-grid.jpg" alt=""></a>
                 <h3>BootStrap Grid</h3>
             </div>
         </div>
@@ -307,7 +311,7 @@
 
                         <div class="row h3">H3</div>
 
-                        <div class=" row">
+                        <div class="row">
                             <div class="col-md-1">9</div>
                             <div class="col-md-1">10</div>
                             <div class="col-md-1">11</div>
@@ -422,12 +426,81 @@
                 <!-- Modal Header-->
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                    <h4 class="modal-title h2">Math Exercise</h4>
                 </div>
 
                 <!--Modal Body-->
                 <div class="modal-body">
-                    <p>Some text in the modal.</p>
+                    
+                   <div class="row h4">
+                       <div class="col-md-12 text-center h5">
+                           In this exercise, you will be able to perform a number of mathmatical calculations.
+                       </div>      
+                   </div>
+
+                    <hr/>
+
+                    <div class="row">
+                        <div id="inputSetUp" class="col-md-6">
+                            <p class="inputMath h5">Enter some Numbers!</p>
+                            <input class="inputMath" type="text" id="num1" placeholder="Enter an Integer..." />
+                            <input class="inputMath" type="text" id="num2" placeholder="Enter an Integer..." />
+                            <input class="inputMath" type="text" id="num3" placeholder="Enter an Integer..." />
+                            <input class="inputMath" type="text" id="num4" placeholder="Enter an Integer..." />
+                            <input class="inputMath" type="text" id="num5" placeholder="Enter an Integer..." />
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <button id="mathModalBtn" class="btn-success button1">Calculate!</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button id="btnShowCode" class="btn-primary button1">Show Code</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 h5">
+                            <p>Results!</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="inputMath" id="minOut"></p>
+                                <p class="inputMath" id="maxOut"></p>
+                                <p class="inputMath" id="meanOut"></p>
+                                <p class="inputMath" id="sumOut"></p>
+                                <p class="inputMath" id="productOut"></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div id="divCode">
+                            <pre toggle class="brush: js">
+$("#mathModalBtn").click(function () {
+        var num1 = +$("#num1").val();
+        var num2 = +$("#num2").val();
+        var num3 = +$("#num3").val();
+        var num4 = +$("#num4").val();
+        var num5 = +$("#num5").val();
+        var max = Math.max(num1, num2, num3, num4, num5);
+        var min = Math.min(num1, num2, num3, num4, num5);
+        var sum = num1 + num2 + num3 + num4 + num5;
+        var mean = sum / 5;
+        var product = num1 * num2 * num3 * num4 * num5
+
+        $("#minOut").text("The smallest number is " + min + ".") ;
+        $("#maxOut").text("The largest Number is " + max + ".") ;
+        $("#sumOut").text("The Sum of the Numbers is " + sum + ".");
+        $("#meanOut").text("The Average of the Numbers is " + mean + ".");
+        $("#productOut").text("The Product of the Numbers is " + product + ".");
+
+
+    });
+                            </pre>
+                        </div>
+                    </div>
+
+                   
                 </div>
 
                 <!--Modal Footer-->
@@ -465,6 +538,11 @@
     <script type="text/javascript" src="/Scripts/classie.js"></script>
     <script type="text/javascript" src="/Scripts/magnific-popup.js"></script>
     <script src="/Scripts/contactform.js"></script>
+    <script src="Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
+    <script src="Scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+    <script>
+        SyntaxHighlighter.all();
+    </script>
     <script type="text/javascript">
         $(document).ready(function (e) {
 
@@ -475,10 +553,10 @@
 
             });
 
-            $('.Portfolio-box').magnificPopup({
-                delegate: 'a',
-                type: 'image'
-            });
+            //$('.Portfolio-box').magnificPopup({
+            //    delegate: 'a',
+            //    type: 'image'
+            //});
 
         });
     </script>
@@ -554,6 +632,45 @@
             });
 
         });
+
+         $("#mathModalBtn").click(function () {
+            var num1 = +$("#num1").val();
+            var num2 = +$("#num2").val();
+            var num3 = +$("#num3").val();
+            var num4 = +$("#num4").val();
+            var num5 = +$("#num5").val();
+            var max = Math.max(num1, num2, num3, num4, num5);
+            var min = Math.min(num1, num2, num3, num4, num5);
+            var sum = num1 + num2 + num3 + num4 + num5;
+            var mean = sum / 5;
+            var product = num1 * num2 * num3 * num4 * num5
+
+            $("#minOut").text("The smallest number is " + min + ".") ;
+            $("#maxOut").text("The largest Number is " + max + ".") ;
+            $("#sumOut").text("The Sum of the Numbers is " + sum + ".");
+            $("#meanOut").text("The Average of the Numbers is " + mean + ".");
+            $("#productOut").text("The Product of the Numbers is " + product + ".");
+
+
+        });
+
+        
+
+        $("#divCode").hide();
+         $(document).ready(function () {
+            $("#btnShowCode").click(function () {
+                $("#divCode").toggle();
+
+                if (this.value == "Show Code!") this.value = "Hide Code!";
+                else this.value = "Show Code!";
+
+            });
+        });
+
+
+
+        
+
     </script>
 
 </body>

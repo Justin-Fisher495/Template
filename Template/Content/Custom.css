@@ -14,3 +14,18 @@
         -moz-transition: all 0.3s ease-in-out;
         -webkit-transition: all 0.3s ease-in-out;
     }
+
+.inputMath {
+    margin-bottom: 10px;
+    width: 60%
+}
+
+.button1 {
+    width: 100%;
+}
+
+    .button1:hover {
+        background-color: white;
+        color: black;
+        border: 2px solid #4CAF50;
+    }
