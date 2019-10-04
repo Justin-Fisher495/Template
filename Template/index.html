@@ -41,6 +41,7 @@
             <a class="link animated fadeInUp delay-1s servicelink" href="#about">Take a Look</a>
         </div>
     </header>
+
     <!--header-end-->
 
     <nav class="main-nav-outer" id="test">
@@ -57,9 +58,8 @@
             <a class="res-nav_click" href="#"><i class="fa fa-bars"></i></a>
         </div>
     </nav>
+
     <!--main-nav-end-->
-
-
 
     <section class="main-section" id="about">
         <!--main-section-start-->
@@ -112,6 +112,7 @@
             </div>
         </div>
     </section>
+
     <!--main-section-end-->
 
 
@@ -124,19 +125,19 @@
         </div>
         <div class="portfolioContainer wow fadeInUp delay-04s">
             <div class="Portfolio-box isotope">
-                <a href="#" class="" data-toggle="modal" data-target="#mathModal"><img src="img/sized-math-modal-button.png" alt=""></a>
+                <a href="#" data-toggle="modal" data-target="#mathModal"><img src="img/sized-math-modal-button.png" alt=""></a>
                 <h3>Math Exercise</h3>
             </div>
             <div class="Portfolio-box webdesign">
-                <a href="img/sized-factorial.png"><img src="img/sized-factorial.png" alt=""></a>
+                <a href="#" data-toggle="modal" data-target="#factorialModal"><img src="img/sized-factorial.png" alt=""></a>
                 <h3>Factorial Exercise</h3>
             </div>
             <div class="Portfolio-box branding">
-                <a href="#"><img src="img/sized-fizzbuzz.png" alt=""></a>
+                <a href="#" data-toggle="modal" data-target="#fizzBuzzModal"><img src="img/sized-fizzbuzz.png" alt=""></a>
                 <h3>FizzBuzz Exercise</h3>
             </div>
-            <div class=" Portfolio-box photography">
-                <a href="img/sized-pallindrome.png"><img src="img/sized-pallindrome.png" alt=""></a>
+            <div class="Portfolio-box">
+                <a href="#" data-toggle="modal" data-target="#pallandromeModal"><img src="img/sized-pallindrome.png" alt=""></a>
                 <h3>Pallindrome Exercise</h3>
             </div>
             <div class="Portfolio-box">
@@ -145,11 +146,8 @@
             </div>
         </div>
     </section>
+
     <!--main-section client-part-end-->
-
-
-
-
 
     <section class="main-section paddind" id="Portfolio">
         <!--main-section-start-->
@@ -200,9 +198,394 @@
             </div>
         </div>
     </section>
+
     <!--main-section-end-->
 
-    <!-- Modal -->
+    <section class="business-talking">
+        <!--business-talking-start-->
+        <div class="container">
+            <h2>Let’s Talk Business.</h2>
+        </div>
+    </section>
+
+    <!--business-talking-end-->
+
+    <div class="container">
+        <section class="main-section contact" id="contact">
+
+            <div class="row">
+                <div class="col-lg-6 col-sm-7 wow fadeInLeft">
+                    <div class="contact-info-box address clearfix">
+                        <h3><i class=" icon-map-marker"></i>Address:</h3>
+                        <span>308 Negra Arroyo Lane<br>Albuquerque, New Mexico, 87111.</span>
+                    </div>
+                    <div class="contact-info-box phone clearfix">
+                        <h3><i class="fa fa-phone"></i>Phone:</h3>
+                        <span>1-800-BOO-YAHH</span>
+                    </div>
+                    <div class="contact-info-box email clearfix">
+                        <h3><i class="fa fa-pencil"></i>email:</h3>
+                        <span>hello@knightstudios.com</span>
+                    </div>
+                    <div class="contact-info-box hours clearfix">
+                        <h3><i class="fa fa-clock-o"></i>Hours:</h3>
+                        <span><strong>Monday - Thursday:</strong> 10am - 6pm<br><strong>Friday:</strong> People work on Fridays now?<br><strong>Saturday - Sunday:</strong> Best not to ask.</span>
+                    </div>
+                    <ul class="social-link">
+                        <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="pinterest"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li class="gplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li class="dribbble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
+                    <div class="form">
+
+                        <div id="sendmessage">Your message has been sent. Thank you!</div>
+                        <div id="errormessage"></div>
+                        <form action="" method="post" role="form" class="contactForm">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control input-text" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control input-text" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control input-text text-area" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                <div class="validation"></div>
+                            </div>
+
+                            <div class="text-center"><button type="submit" class="input-btn">Send Message</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+    <!-- Math Modal -->
+
+    <div id="mathModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                <!-- Modal Header-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title h2">Math Exercise</h4>
+                </div>
+
+                <!--Modal Body-->
+                <div class="modal-body">
+
+                    <div class="row h4">
+                        <div class="col-md-12 text-center h5">
+                            In this exercise, you will be able to perform a number of mathmatical calculations.
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="row">
+                        <div id="inputSetUp" class="col-md-6">
+                            <p class="inputMath h5">Enter some Numbers!</p>
+                            <input class="inputMath" type="text" id="num1" placeholder="Enter an Integer..." />
+                            <input class="inputMath" type="text" id="num2" placeholder="Enter an Integer..." />
+                            <input class="inputMath" type="text" id="num3" placeholder="Enter an Integer..." />
+                            <input class="inputMath" type="text" id="num4" placeholder="Enter an Integer..." />
+                            <input class="inputMath" type="text" id="num5" placeholder="Enter an Integer..." />
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <button id="mathModalBtn" class="btn-success button1">Calculate!</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button id="btnShowCodeMath" class="btn-primary button1">Toggle Code</button>
+                                </div>
+                                <div class="col-md-4">
+                                    <button id="btnClear" class="btn-primary button1">Clear Input</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 h5">
+                            <p>Results!</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="inputMath" id="minOut"></p>
+                                <p class="inputMath" id="maxOut"></p>
+                                <p class="inputMath" id="meanOut"></p>
+                                <p class="inputMath" id="sumOut"></p>
+                                <p class="inputMath" id="productOut"></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div id="divCodeMath">
+                            <pre toggle class="brush: js">
+$("#mathModalBtn").click(function () {
+        var num1 = +$("#num1").val();
+        var num2 = +$("#num2").val();
+        var num3 = +$("#num3").val();
+        var num4 = +$("#num4").val();
+        var num5 = +$("#num5").val();
+        var max = Math.max(num1, num2, num3, num4, num5);
+        var min = Math.min(num1, num2, num3, num4, num5);
+        var sum = num1 + num2 + num3 + num4 + num5;
+        var mean = sum / 5;
+        var product = num1 * num2 * num3 * num4 * num5
+
+        $("#minOut").text("The smallest number is " + min + ".") ;
+        $("#maxOut").text("The largest Number is " + max + ".") ;
+        $("#sumOut").text("The Sum of the Numbers is " + sum + ".");
+        $("#meanOut").text("The Average of the Numbers is " + mean + ".");
+        $("#productOut").text("The Product of the Numbers is " + product + ".");
+
+
+    });
+                            </pre>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!--Modal Footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Factorial Modal -->
+
+    <div id="factorialModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Factorial Exercise!</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            Enter number:
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <input type="text" id="factNum" />
+                        </div>
+                    </div>
+                    <hr 5px />
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <button class="btn btn-primary" id="btnFact">Calculate</button>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <button class="btn btn-primary" id="btnShowCodeFact">Toggle Code</button>
+                        </div>
+                    </div>
+                    <hr 5px />
+                    <div class="row">
+                        <div class="col-md-12 text-center h4">RESULT</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 text-center h4">
+                            <p id="factResult"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="divCodeFact">
+                            <pre toggle class="brush: js">
+$("#btnFact").click(function () {
+var factnum = Number($("#factNum").val());
+var result = Factorial(factnum);
+$("#factResult").text(result);
+});
+
+function Factorial(number) {
+for (var loop = number - 1; loop > 1; loop--) {
+number *= loop
+}
+
+return number;
+}
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FizzBuzz Modal -->
+
+    <div id="fizzBuzzModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h3>Enter two numbers, each between 1 and 100</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <input type="text" placeholder="Enter a Number..." id="fA" />
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <input type="text" placeholder="Enter a Number..." id="fB" />
+                        </div>
+                    </div>
+                    <hr 20px />
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <button class="btn btn-lg" id="btnFiz">Do The Thing!</button>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <button class="btn btn-primary" id="btnShowCodeFizz">Toggle Code</button>
+                        </div>
+                    </div>
+                    <hr 20px />
+                    <span id="outFiz"></span>
+                    <div class="row">
+                        <div id="divCodeFizz">
+                            <pre toggle class="brush: js">
+$("#btnFiz").click(function () {
+var fizA = +$("#fA").val();
+var fizB = +$("#fB").val();
+var fizR = FizBuz(fizA, fizB);
+$("#outFiz").text(fizR);
+});
+
+function FizBuz(fizA, fizB) {
+var buzA = "";
+for (var i = 1; i <= 100; i++) {
+if (i % fizA == 0 && i % fizB == 0) {
+buzA += "FizzBuzz, ";
+} else if (i % fizA == 0) {
+buzA += "Fizz, ";
+} else if (i % fizB == 0) {
+buzA += "Buzz, ";
+} else buzA += i + ", ";
+
+}
+return buzA;
+}
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Pallandrome Modal -->
+
+    <div id="pallandromeModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>Palindrome Test!</p>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="palInput" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <button type="button" id="palCheck" class="btn btn-success btnpal">Check!</button>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <button type="button" id="btnShowCodePal" class="btn btn-success btnpal">Toggle Code</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p id="palOutput"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="divCodePal">
+                            <pre toggle class="brush: js">
+$("#palCheck").click(function () {
+var input = $("#palInput").val();
+if (ispal(input)) {
+$("#palOutput").text(input + " is a Palindrome!");
+
+}
+else {
+$("#palOutput").text(input + " is NOT a Palindrome!");
+}
+});
+
+function ispal(palinput) {
+var output = "";
+for (var i = palinput.length - 1; i >= 0; i--) {
+output += palinput[i];
+}
+return palinput === output;
+}
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- BSGrid Modal -->
+
     <div id="gridModal" class="modal fade" role="dialog">
         <div class="modal-dialog" style="width:1250px;">
 
@@ -348,170 +731,228 @@
         </div>
     </div>
 
+    <!--JScript Section-->
 
-    <section class="business-talking">
-        <!--business-talking-start-->
-        <div class="container">
-            <h2>Let’s Talk Business.</h2>
-        </div>
-    </section>
-    <!--business-talking-end-->
-    <div class="container">
-        <section class="main-section contact" id="contact">
+    <span>
+        <script type="text/javascript" src="/Scripts/jquery.1.8.3.min.js"></script>
+        <script type="text/javascript" src="/Scripts/bootstrap.js"></script>
+        <script type="text/javascript" src="/Scripts/jquery-scrolltofixed.js"></script>
+        <script type="text/javascript" src="/Scripts/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="/Scripts/jquery.isotope.js"></script>
+        <script type="text/javascript" src="/Scripts/wow.js"></script>
+        <script type="text/javascript" src="/Scripts/classie.js"></script>
+        <script type="text/javascript" src="/Scripts/magnific-popup.js"></script>
+        <script src="/Scripts/contactform.js"></script>
+        <script src="Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
+        <script src="Scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+        <script>
+            SyntaxHighlighter.all();
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function (e) {
 
-            <div class="row">
-                <div class="col-lg-6 col-sm-7 wow fadeInLeft">
-                    <div class="contact-info-box address clearfix">
-                        <h3><i class=" icon-map-marker"></i>Address:</h3>
-                        <span>308 Negra Arroyo Lane<br>Albuquerque, New Mexico, 87111.</span>
-                    </div>
-                    <div class="contact-info-box phone clearfix">
-                        <h3><i class="fa fa-phone"></i>Phone:</h3>
-                        <span>1-800-BOO-YAHH</span>
-                    </div>
-                    <div class="contact-info-box email clearfix">
-                        <h3><i class="fa fa-pencil"></i>email:</h3>
-                        <span>hello@knightstudios.com</span>
-                    </div>
-                    <div class="contact-info-box hours clearfix">
-                        <h3><i class="fa fa-clock-o"></i>Hours:</h3>
-                        <span><strong>Monday - Thursday:</strong> 10am - 6pm<br><strong>Friday:</strong> People work on Fridays now?<br><strong>Saturday - Sunday:</strong> Best not to ask.</span>
-                    </div>
-                    <ul class="social-link">
-                        <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li class="pinterest"><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                        <li class="gplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li class="dribbble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
-                    <div class="form">
+                $('#test').scrollToFixed();
+                $('.res-nav_click').click(function () {
+                    $('.main-nav').slideToggle();
+                    return false
 
-                        <div id="sendmessage">Your message has been sent. Thank you!</div>
-                        <div id="errormessage"></div>
-                        <form action="" method="post" role="form" class="contactForm">
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control input-text" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                <div class="validation"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control input-text" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                                <div class="validation"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                                <div class="validation"></div>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control input-text text-area" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                                <div class="validation"></div>
-                            </div>
+                });
 
-                            <div class="text-center"><button type="submit" class="input-btn">Send Message</button></div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+                //$('.Portfolio-box').magnificPopup({
+                //    delegate: 'a',
+                //    type: 'image'
+                //});
 
-    <!-- Modal -->
-    <div id="mathModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
+            });
+        </script>
+        <script>
+            wow = new WOW({
+                animateClass: 'animated',
+                offset: 100
+            });
+            wow.init();
+        </script>
+        <script type="text/javascript">
+            $(window).load(function () {
 
-            <!-- Modal content-->
-            <div class="modal-content">
+                $('.main-nav li a, .servicelink').bind('click', function (event) {
+                    var $anchor = $(this);
 
-                <!-- Modal Header-->
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title h2">Math Exercise</h4>
-                </div>
-
-                <!--Modal Body-->
-                <div class="modal-body">
-                    
-                   <div class="row h4">
-                       <div class="col-md-12 text-center h5">
-                           In this exercise, you will be able to perform a number of mathmatical calculations.
-                       </div>      
-                   </div>
-
-                    <hr/>
-
-                    <div class="row">
-                        <div id="inputSetUp" class="col-md-6">
-                            <p class="inputMath h5">Enter some Numbers!</p>
-                            <input class="inputMath" type="text" id="num1" placeholder="Enter an Integer..." />
-                            <input class="inputMath" type="text" id="num2" placeholder="Enter an Integer..." />
-                            <input class="inputMath" type="text" id="num3" placeholder="Enter an Integer..." />
-                            <input class="inputMath" type="text" id="num4" placeholder="Enter an Integer..." />
-                            <input class="inputMath" type="text" id="num5" placeholder="Enter an Integer..." />
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <button id="mathModalBtn" class="btn-success button1">Calculate!</button>
-                                </div>
-                                <div class="col-md-6">
-                                    <button id="btnShowCode" class="btn-primary button1">Show Code</button>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 h5">
-                            <p>Results!</p>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p class="inputMath" id="minOut"></p>
-                                <p class="inputMath" id="maxOut"></p>
-                                <p class="inputMath" id="meanOut"></p>
-                                <p class="inputMath" id="sumOut"></p>
-                                <p class="inputMath" id="productOut"></p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="row">
-                        <div id="divCode">
-                            <pre toggle class="brush: js">
-$("#mathModalBtn").click(function () {
-        var num1 = +$("#num1").val();
-        var num2 = +$("#num2").val();
-        var num3 = +$("#num3").val();
-        var num4 = +$("#num4").val();
-        var num5 = +$("#num5").val();
-        var max = Math.max(num1, num2, num3, num4, num5);
-        var min = Math.min(num1, num2, num3, num4, num5);
-        var sum = num1 + num2 + num3 + num4 + num5;
-        var mean = sum / 5;
-        var product = num1 * num2 * num3 * num4 * num5
-
-        $("#minOut").text("The smallest number is " + min + ".") ;
-        $("#maxOut").text("The largest Number is " + max + ".") ;
-        $("#sumOut").text("The Sum of the Numbers is " + sum + ".");
-        $("#meanOut").text("The Average of the Numbers is " + mean + ".");
-        $("#productOut").text("The Product of the Numbers is " + product + ".");
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top - 102
+                    }, 1500, 'easeInOutExpo');
+                    /*
+                    if you don't want to use the easing effects:
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1000);
+                    */
+                    if ($(window).width() < 768) {
+                        $('.main-nav').hide();
+                    }
+                    event.preventDefault();
+                });
+            })
+        </script>
+        <script type="text/javascript">
+            $(window).load(function () {
 
 
-    });
-                            </pre>
-                        </div>
-                    </div>
+                var $container = $('.portfolioContainer'),
+                    $body = $('body'),
+                    colW = 375,
+                    columns = null;
 
-                   
-                </div>
 
-                <!--Modal Footer-->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
+                $container.isotope({
+                    // disable window resizing
+                    resizable: true,
+                    masonry: {
+                        columnWidth: colW
+                    }
+                });
 
-            </div>
+                $(window).smartresize(function () {
+                    // check if columns has changed
+                    var currentColumns = Math.floor(($body.width() - 30) / colW);
+                    if (currentColumns !== columns) {
+                        // set new column count
+                        columns = currentColumns;
+                        // apply width to container manually, then trigger relayout
+                        $container.width(columns * colW)
+                            .isotope('reLayout');
+                    }
 
-        </div>
-    </div>
+                }).smartresize(); // trigger resize to set container width
+                $('.portfolioFilter a').click(function () {
+                    $('.portfolioFilter .current').removeClass('current');
+                    $(this).addClass('current');
+
+                    var selector = $(this).attr('data-filter');
+                    $container.isotope({
+
+                        filter: selector,
+                    });
+                    return false;
+                });
+
+            });
+
+            $("#mathModalBtn").click(function () {
+                var num1 = +$("#num1").val();
+                var num2 = +$("#num2").val();
+                var num3 = +$("#num3").val();
+                var num4 = +$("#num4").val();
+                var num5 = +$("#num5").val();
+                var max = Math.max(num1, num2, num3, num4, num5);
+                var min = Math.min(num1, num2, num3, num4, num5);
+                var sum = num1 + num2 + num3 + num4 + num5;
+                var mean = sum / 5;
+                var product = num1 * num2 * num3 * num4 * num5
+
+                $("#minOut").text("The smallest number is " + min + ".");
+                $("#maxOut").text("The largest Number is " + max + ".");
+                $("#sumOut").text("The Sum of the Numbers is " + sum + ".");
+                $("#meanOut").text("The Average of the Numbers is " + mean + ".");
+                $("#productOut").text("The Product of the Numbers is " + product + ".");
+
+
+            });
+
+
+
+            $("#divCodeMath").hide();
+            $(document).ready(function () {
+                $("#btnShowCodeMath").click(function () {
+                    $("#divCodeMath").toggle();
+                });
+            });
+
+            $("#divCodeFact").hide();
+            $(document).ready(function () {
+                $("#btnShowCodeFact").click(function () {
+                    $("#divCodeFact").toggle();
+                });
+            });
+
+            $("#divCodeFizz").hide();
+            $(document).ready(function () {
+                $("#btnShowCodeFizz").click(function () {
+                    $("#divCodeFizz").toggle();
+                });
+            });
+
+            $("#divCodePal").hide();
+            $(document).ready(function () {
+                $("#btnShowCodePal").click(function () {
+                    $("#divCodePal").toggle();
+                });
+            });
+
+            $("#btnFact").click(function () {
+                var factnum = Number($("#factNum").val());
+                var result = Factorial(factnum);
+                $("#factResult").text(result);
+            });
+
+            function Factorial(number) {
+                for (var loop = number - 1; loop > 1; loop--) {
+                    number *= loop
+                }
+
+                return number;
+            }
+
+            $("#btnFiz").click(function () {
+                var fizA = +$("#fA").val();
+                var fizB = +$("#fB").val();
+                var fizR = FizBuz(fizA, fizB);
+                $("#outFiz").text(fizR);
+            });
+
+            function FizBuz(fizA, fizB) {
+                var buzA = "";
+                for (var i = 1; i <= 100; i++) {
+                    if (i % fizA == 0 && i % fizB == 0) {
+                        buzA += "FizzBuzz, ";
+                    } else if (i % fizA == 0) {
+                        buzA += "Fizz, ";
+                    } else if (i % fizB == 0) {
+                        buzA += "Buzz, ";
+                    } else buzA += i + ", ";
+
+                }
+                return buzA;
+            }
+
+            $("#palCheck").click(function () {
+                var input = $("#palInput").val();
+                if (ispal(input)) {
+                    $("#palOutput").text(input + " is a Palindrome!");
+
+                }
+                else {
+                    $("#palOutput").text(input + " is NOT a Palindrome!");
+                }
+            });
+
+            function ispal(palinput) {
+                var output = "";
+                for (var i = palinput.length - 1; i >= 0; i--) {
+                    output += palinput[i];
+                }
+                return palinput === output;
+            }
+
+            $("#btnclear").click(function () {
+                $("#num1", "#num2", "#num3", "#num4", "#num5").text("")
+
+            });
+
+        </script>
+    </span>
+
+    <!--Footer Section-->
 
     <footer class="footer">
         <div class="container">
@@ -529,150 +970,9 @@ $("#mathModalBtn").click(function () {
         </div>
     </footer>
 
-    <script type="text/javascript" src="/Scripts/jquery.1.8.3.min.js"></script>
-    <script type="text/javascript" src="/Scripts/bootstrap.js"></script>
-    <script type="text/javascript" src="/Scripts/jquery-scrolltofixed.js"></script>
-    <script type="text/javascript" src="/Scripts/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="/Scripts/jquery.isotope.js"></script>
-    <script type="text/javascript" src="/Scripts/wow.js"></script>
-    <script type="text/javascript" src="/Scripts/classie.js"></script>
-    <script type="text/javascript" src="/Scripts/magnific-popup.js"></script>
-    <script src="/Scripts/contactform.js"></script>
-    <script src="Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
-    <script src="Scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
-    <script>
-        SyntaxHighlighter.all();
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function (e) {
-
-            $('#test').scrollToFixed();
-            $('.res-nav_click').click(function () {
-                $('.main-nav').slideToggle();
-                return false
-
-            });
-
-            //$('.Portfolio-box').magnificPopup({
-            //    delegate: 'a',
-            //    type: 'image'
-            //});
-
-        });
-    </script>
-    <script>
-        wow = new WOW({
-            animateClass: 'animated',
-            offset: 100
-        });
-        wow.init();
-    </script>
-    <script type="text/javascript">
-        $(window).load(function () {
-
-            $('.main-nav li a, .servicelink').bind('click', function (event) {
-                var $anchor = $(this);
-
-                $('html, body').stop().animate({
-                    scrollTop: $($anchor.attr('href')).offset().top - 102
-                }, 1500, 'easeInOutExpo');
-                /*
-                if you don't want to use the easing effects:
-                $('html, body').stop().animate({
-                    scrollTop: $($anchor.attr('href')).offset().top
-                }, 1000);
-                */
-                if ($(window).width() < 768) {
-                    $('.main-nav').hide();
-                }
-                event.preventDefault();
-            });
-        })
-    </script>
-    <script type="text/javascript">
-        $(window).load(function () {
-
-
-            var $container = $('.portfolioContainer'),
-                $body = $('body'),
-                colW = 375,
-                columns = null;
-
-
-            $container.isotope({
-                // disable window resizing
-                resizable: true,
-                masonry: {
-                    columnWidth: colW
-                }
-            });
-
-            $(window).smartresize(function () {
-                // check if columns has changed
-                var currentColumns = Math.floor(($body.width() - 30) / colW);
-                if (currentColumns !== columns) {
-                    // set new column count
-                    columns = currentColumns;
-                    // apply width to container manually, then trigger relayout
-                    $container.width(columns * colW)
-                        .isotope('reLayout');
-                }
-
-            }).smartresize(); // trigger resize to set container width
-            $('.portfolioFilter a').click(function () {
-                $('.portfolioFilter .current').removeClass('current');
-                $(this).addClass('current');
-
-                var selector = $(this).attr('data-filter');
-                $container.isotope({
-
-                    filter: selector,
-                });
-                return false;
-            });
-
-        });
-
-         $("#mathModalBtn").click(function () {
-            var num1 = +$("#num1").val();
-            var num2 = +$("#num2").val();
-            var num3 = +$("#num3").val();
-            var num4 = +$("#num4").val();
-            var num5 = +$("#num5").val();
-            var max = Math.max(num1, num2, num3, num4, num5);
-            var min = Math.min(num1, num2, num3, num4, num5);
-            var sum = num1 + num2 + num3 + num4 + num5;
-            var mean = sum / 5;
-            var product = num1 * num2 * num3 * num4 * num5
-
-            $("#minOut").text("The smallest number is " + min + ".") ;
-            $("#maxOut").text("The largest Number is " + max + ".") ;
-            $("#sumOut").text("The Sum of the Numbers is " + sum + ".");
-            $("#meanOut").text("The Average of the Numbers is " + mean + ".");
-            $("#productOut").text("The Product of the Numbers is " + product + ".");
-
-
-        });
-
-        
-
-        $("#divCode").hide();
-         $(document).ready(function () {
-            $("#btnShowCode").click(function () {
-                $("#divCode").toggle();
-
-                if (this.value == "Show Code!") this.value = "Hide Code!";
-                else this.value = "Show Code!";
-
-            });
-        });
-
-
-
-        
-
-    </script>
 
 </body>
+
+
 
 </html>
