@@ -339,25 +339,25 @@
                         <div id="divCodeMath">
                             <pre toggle class="brush: js">
 $("#mathModalBtn").click(function () {
-        var num1 = +$("#num1").val();
-        var num2 = +$("#num2").val();
-        var num3 = +$("#num3").val();
-        var num4 = +$("#num4").val();
-        var num5 = +$("#num5").val();
-        var max = Math.max(num1, num2, num3, num4, num5);
-        var min = Math.min(num1, num2, num3, num4, num5);
-        var sum = num1 + num2 + num3 + num4 + num5;
-        var mean = sum / 5;
-        var product = num1 * num2 * num3 * num4 * num5
+var num1 = +$("#num1").val();
+var num2 = +$("#num2").val();
+var num3 = +$("#num3").val();
+var num4 = +$("#num4").val();
+var num5 = +$("#num5").val();
+var max = Math.max(num1, num2, num3, num4, num5);
+var min = Math.min(num1, num2, num3, num4, num5);
+var sum = num1 + num2 + num3 + num4 + num5;
+var mean = sum / 5;
+var product = num1 * num2 * num3 * num4 * num5
 
-        $("#minOut").text("The smallest number is " + min + ".") ;
-        $("#maxOut").text("The largest Number is " + max + ".") ;
-        $("#sumOut").text("The Sum of the Numbers is " + sum + ".");
-        $("#meanOut").text("The Average of the Numbers is " + mean + ".");
-        $("#productOut").text("The Product of the Numbers is " + product + ".");
+$("#minOut").text("The smallest number is " + min + ".") ;
+$("#maxOut").text("The largest Number is " + max + ".") ;
+$("#sumOut").text("The Sum of the Numbers is " + sum + ".");
+$("#meanOut").text("The Average of the Numbers is " + mean + ".");
+$("#productOut").text("The Product of the Numbers is " + product + ".");
 
 
-    });
+});
                             </pre>
                         </div>
                     </div>
