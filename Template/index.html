@@ -388,7 +388,7 @@ $("#productOut").text("The Product of the Numbers is " + product + ".");
                 </div>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-12 text-center">
+                        <div id="clearFactNum" class="col-md-12 text-center">
                             Enter number:
                         </div>
                     </div>
@@ -396,15 +396,6 @@ $("#productOut").text("The Product of the Numbers is " + product + ".");
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <input type="text" id="factNum" />
-                        </div>
-                    </div>
-                    <hr 5px />
-                    <div class="row">
-                        <div class="col-md-6 text-center">
-                            <button class="btn btn-primary" id="btnFact">Calculate</button>
-                        </div>
-                        <div class="col-md-6 text-center">
-                            <button class="btn btn-primary" id="btnShowCodeFact">Toggle Code</button>
                         </div>
                     </div>
                     <hr 5px />
@@ -417,6 +408,20 @@ $("#productOut").text("The Product of the Numbers is " + product + ".");
                             <p id="factResult"></p>
                         </div>
                     </div>
+                    <hr 5px />
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <button class="btn btn-primary" id="btnFact">Calculate</button>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <button class="btn btn-primary" id="btnShowCodeFact">Toggle Code</button>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <button class="btn btn-primary" id="btnFactClear">Clear Input</button>
+                        </div>
+                    </div>
+                    
+
                     <div class="row">
                         <div id="divCodeFact">
                             <pre toggle class="brush: js">
@@ -874,6 +879,10 @@ return palinput === output;
                     $("#divCodeFact").toggle();
                 });
             });
+
+            //$("#btnFactClear").click(function () {
+            //    $("#clearFactNum").val("")
+            //});
 
             $("#divCodeFizz").hide();
             $(document).ready(function () {
