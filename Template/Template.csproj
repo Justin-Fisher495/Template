@@ -77,6 +77,7 @@
     <Content Include="Content\StyleSheet1.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="img\bg-map.png" />
+    <Content Include="img\blog.jpg" />
     <Content Include="img\c-liogo1.png" />
     <Content Include="img\c-liogo2.png" />
     <Content Include="img\c-liogo3.png" />
@@ -87,6 +88,7 @@
     <Content Include="img\fish-favicon.png" />
     <Content Include="img\glyphicons-halflings-white.png" />
     <Content Include="img\glyphicons-halflings.png" />
+    <Content Include="img\HeadShot.PNG" />
     <Content Include="img\imac.png" />
     <Content Include="img\iPad.png" />
     <Content Include="img\iphone.png" />
